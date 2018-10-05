@@ -1,0 +1,44 @@
+<form [formGroup]="myviewForm" (ngSubmit)="onSubmit()">
+    <div class="container-fluid m-0">
+
+            <div class="row pd-top-10">
+                    <div class="input-group">
+        
+                        <div class="col-6 pl-0">
+                            <label for="originCity" class="requiredLabel">PNR</label>
+                        </div>
+                        <div class="col-6 p-0">
+                            <label for="destCity" class="requiredLabel">LAST NAME</label>
+                        </div>
+                    </div>
+                </div>
+            <div class="row ">
+                    <div class="input-group">
+
+                <div class="col-6 pl-0">
+                    <input  type="text" class="form-control no-border-rad ellip" formControlName="pnrSrch" />
+                </div>
+              
+                <div class="col-6 p-0">
+                    <input type="text" class="form-control no-border-rad ellip" formControlName="lnameSrch"  />
+                </div>
+            </div>
+        </div>
+       
+        <div class="row pad-5  ">
+                <div class="pull-right offset-md-4 col-8 right pr-0 ">
+                    <div class="pd-top-10">
+    
+                    <input src="" class="paynowBtn submit" id="flights-submit" name="ap3-flights-submit" type="submit" value="VIEW BOOKINGs">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+</form>
+<ng-template #rt let-r="result" let-t="term">
+    {{ r.value}}
+</ng-template>

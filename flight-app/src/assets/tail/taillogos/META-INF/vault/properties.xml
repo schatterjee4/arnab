@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>FileVault Package Properties</comment>
+<entry key="createdBy">sharmistha.chatterjee@cognizant.com</entry>
+<entry key="name">taillogos</entry>
+<entry key="lastModified">2018-09-06T19:34:55.281+08:00</entry>
+<entry key="lastModifiedBy">sharmistha.chatterjee@cognizant.com</entry>
+<entry key="created">2018-09-06T19:34:57.389+08:00</entry>
+<entry key="buildCount">1</entry>
+<entry key="version"/>
+<entry key="dependencies"/>
+<entry key="packageFormatVersion">2</entry>
+<entry key="description"/>
+<entry key="lastWrapped">2018-09-06T19:34:55.281+08:00</entry>
+<entry key="group">GLC-EtihadGuest</entry>
+<entry key="lastWrappedBy">sharmistha.chatterjee@cognizant.com</entry>
+</properties>

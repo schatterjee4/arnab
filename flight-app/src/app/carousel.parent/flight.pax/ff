@@ -1,0 +1,15 @@
+  <ngb-accordion #acc="ngbAccordion" formArrayName="paxArray">
+
+                            {{pax}}
+                            <ngb-panel id="pax-{{pax.paxType}}-{{i}}" class="adt">
+                                <ng-template ngbPanelContent>
+                                    <div class="container ">
+                                        <div class="row ml-0">
+
+                                            <label class="requiredLabel passDetailLbl">First Name</label>
+                                            <!--  <div class="col-5"> <input id="{{pax.paxType}}-{{adt}}" type="text" class=" row-detail form-control no-border-rad" formControlName="firstName" /></div>-->
+                                        </div>
+                                    </div>
+                                </ng-template>
+                            </ngb-panel>
+                        </ngb-accordion>

@@ -1,0 +1,35 @@
+@import url('../carousel.parent.component.scss');
+
+.flight-book-table-header h3::before {
+    font-family: "FontAwesome";
+    font-style: normal;
+    width: 40px;
+    height: 40px;
+    content: '\f058';
+    color:rgb(9, 194, 92);
+}
+.flight-book-table-header h3{
+    font-family: Whitney Semibold!important;
+    font-size:30px;
+    font-weight: 600;
+}
+.p-2{
+    padding:2px!important;
+}
+.spacer{
+    padding:20px;
+    display: inline-block;
+}
+.bookDtBtn{
+    padding:10px!important;
+}
+.row-bottm-border{
+    border-bottom: 1px solid #b4b7bd; 
+}
+.pull-left{
+    float: left !important;
+}
+.row-book-detail{
+    color: #0b1f66!important;
+    font-size: 15px!important;
+}

@@ -1,0 +1,249 @@
+@import url('../carousel.parent.component.scss');
+.outbound-record {
+    border-top: 1px solid #DADADA;
+    border-bottom: 1px solid#DADADA;
+}
+
+.outbound-header {
+    font-family: Whitney-Medium!important;
+    //color: #333;
+    color: #40403f;
+}
+
+.outbound-header h2 {
+    font-family: Whitney-Medium!important;
+    //color: #333;
+    color: #40403f;
+    font-size: 23px;
+}
+
+.flight-detail {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline-block;
+}
+
+.outbound-record-details {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin: 10px;
+    // font-weight: 600;
+    color: #6f6660;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.pax-record-details {
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    background-color: #fff;
+    margin-left: 10px;
+    margin-right: 10px;
+    // margin-bottom: 10px;
+    // font-weight: 600;
+    color: #6f6660;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.pax-record-detail {
+    border-bottom: 1px solid #ccc;
+    // padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.flight-record-detail {
+    border-top: 1px solid #ccc;
+    padding: 5px;
+}
+
+.outbound-record-details span {
+    display: inline-block;
+    position: relative;
+}
+
+.view-table {
+    background-color: #F6F6F6;
+    //background-color: #FBFBFB;
+    border: 1px solid #ccc;
+}
+
+.outbound-header h5 {
+    // color: #A29993;
+    font-family: Whitney-Medium !important;
+    color: #40403f;
+    font-size: 20px;
+}
+
+.view-detail-row {
+    // color: #A29993;
+    //color: #6f6660;
+    color: #40403f;
+    background-color: #F6F6F6;
+    // font-weight: 600;
+}
+
+.outbound-record h4 {
+    font-size: 20px;
+    font-family: Whitney-Medium !important;
+    color: #40403f;
+    display: inline-block;
+}
+
+.flight-icon::before {
+    content: "\f072";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    /*--adjust as necessary--*/
+    font-size: 15px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: -4px;
+    left: 0px;
+}
+
+.flight-icon {
+    width: 10px;
+    height: 10px;
+}
+
+.flight-view-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.flight-view-icon::before {
+    content: "\f072";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    /*--adjust as necessary--*/
+    font-size: 25px;
+    position: absolute;
+    top: 8px;
+    left: 3px;
+    color: #fff;
+}
+
+.connector-block {
+    width: 10px;
+    height: 10px;
+}
+
+.pax-record-header {
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    color: #40403f;
+}
+
+.pax-record-header h5::after {
+    font-family: "FontAwesome";
+    font-style: normal;
+    width: 40px;
+    height: 40px;
+    content: "\f0c0";
+    // color:#666;
+    padding-left: 5px;
+    color: #6f6660;
+}
+
+.pax-rows .pax-record-detail:nth-of-type(even) {
+    //background-color: #F6F6F6;
+}
+
+.last-col {
+    color: #A29993;
+}
+
+.recordTripTime {
+    display: inline-block;
+    color: #40403f;
+    font-size: 20px;
+    font-weight: 600;
+    //font-size: .875rem;
+    line-height: 1.3;
+}
+
+.recordTripDt,
+.recordTripDuration {
+    display: inline-block;
+    color: #6f6660;
+    font-size: 15px;
+    font-weight: 600;
+    //font-size: .875rem;
+    line-height: 1.3;
+}
+
+.recordTripDuration {
+    text-transform: none!important;
+    font-weight: 500;
+    padding-left: 0;
+    font-size: 12px;
+    padding-right: 0px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-align: center;
+}
+
+.pax-record-val {
+    font-weight: 600;
+}
+
+.flight-record-header {
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    color: #40403f;
+}
+
+.flight-record-header h5::after {
+    font-family: "FontAwesome";
+    font-style: normal;
+    font-size: 20px;
+    content: "\f072";
+    // color:#666;
+    padding-left: 5px;
+    color: #6f6660;
+    top: 1px;
+}
+
+.flight-record-header span.flight-record-head-icon {
+    display: inline-block;
+    background-color: #e01933;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.booking-ref {
+    color: #A29993
+}
+
+.status-ref {
+    font-size: 15px;
+    color: #6f6660;
+    display: block;
+    float: right;
+}
+
+.cancelConfirm {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.status-ref span.active {
+    color: rgb(9, 194, 92);
+    display: inline-block;
+}
+
+.status-ref span.inactive {
+    color: #e01933;
+    display: inline-block;
+}

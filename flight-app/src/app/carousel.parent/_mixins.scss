@@ -1,0 +1,22 @@
+@mixin bgimage($name) {
+    background: url("/assets/tailfins/#{$name}_small.png") no-repeat ;
+   
+  }
+  .EY-logo {
+    @include  bgimage("EY");
+  width: 25px;
+  height: 22px;
+  display: inline-block;
+}
+.LH-logo {
+    @include  bgimage("LH");
+    width: 25px;
+    height: 22px;
+    display: inline-block;
+}
+.LX-logo {
+    @include bgimage("LX");
+    width: 25px;
+    height: 22px;
+    display: inline-block;
+  }

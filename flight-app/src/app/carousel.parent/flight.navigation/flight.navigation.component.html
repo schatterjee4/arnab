@@ -1,0 +1,66 @@
+<ol class="l-horizontal-samewidth-list">
+    <li class="is-before-active  step-navigation-past-step step-navigation-step" [ngClass]="{'active':name == 'one'}">
+        <a href="/">
+            <span class="step-caption">
+                <span class="icon-step icon-checked " id="one" >
+                    <!-- <span class="is-visuallyhidden">Step</span> --> 1
+            </span>
+
+            <span class="step-title">Search/View/Cancel Flights</span>
+            </span>
+        </a>
+    </li>
+
+    <li class="is-active    step-navigation-step" [ngClass]="{'active':name == 'search'}">
+        <span>
+            <span class="step-caption">
+                <span class="icon-step" id="search"  >  2 </span>
+
+        <span class="step-title">
+                    Flights Schedule
+
+                    <!-- <span class="is-visuallyhidden">Step</span> -->
+        </span>
+        </span>
+        </span>
+    </li>
+
+
+
+
+    <li class="step-navigation-step" [ngClass]="{'active':name == 'passengerdetails'}">
+        <span>
+            <span class="step-caption">
+                <span class="icon-step" id="passengerdetails" >
+                    <!-- <span class="is-visuallyhidden">Step</span> --> 3
+        </span>
+
+        <span class="step-title">Passenger Details</span>
+        </span>
+        </span>
+    </li>
+
+    <li class="step-navigation-step" [ngClass]="{'active':name == 'payment'}">
+        <span>
+            <span class="step-caption">
+                <span class="icon-step"  id="payment" >
+                    <!-- <span class="is-visuallyhidden">Step</span> --> 4
+        </span>
+
+        <span class="step-title">Payment Details</span>
+        </span>
+        </span>
+    </li>
+
+    <li class="step-navigation-step" [ngClass]="{'active':name == 'bookingdetails'}">
+        <span>
+            <span class="step-caption" >
+                <span class="icon-step"  id="bookingdetails"  >
+                    <!-- <span class="is-visuallyhidden">Step</span> --> 5
+        </span>
+
+        <span class="step-title">Booking Details</span>
+        </span>
+        </span>
+    </li>
+</ol>

@@ -1,0 +1,133 @@
+body {
+    color: #40403f !important;
+	font-family: DroidSans, Arial, Sans-serif !important;
+    font-size: 1em !important;
+    padding: 0px !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: ProximaNova-Regular, Arial, Sans-serif;
+	letter-spacing: 0.001em;
+	color: #36424a;
+}
+h1 {
+   font-size: 2em;
+}
+header{
+    background:#11172b;
+}
+nav{
+    z-index: 1000;
+    background:#11172b;
+}
+.navbar-sm {min-height:10px;max-height: 34px;}
+.clear{
+    margin-top:34px;
+}
+dd{
+    width: 100%;
+
+}
+body,html,main{
+    min-height: 100%;
+}
+.main-div,.wrapper {
+   min-height: 80%;
+}
+.footer-top {
+    background-color: #50b3cf;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.footer-top {
+    padding: 0;
+    color: #ffffff;
+    font-size: 11px;
+    text-align: center;
+    line-height: 43px;
+}
+.footer-top {
+    position: relative;
+}
+@media only screen and (min-width: 1279px)
+{.heroWrapper {
+    min-height: 600px;
+}
+}
+@media only screen and (min-width: 1023px)
+{.heroWrapper {
+    min-height: 400px;
+}}
+@media only screen and (min-width: 992px)
+{.heroWrapper {
+    min-height: 540px;
+}}
+.fixed-header{
+    margin-right: auto;
+    margin-left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    background-color: black;
+    max-height:20px;
+}
+.threePointHighlight {
+    background-color: #fff;
+    color: #333333;
+    font-size: 14px;
+    padding: 5px 0px;
+    border-top:1px solid #E1E1E1;
+}
+.threePointHighlight .highlightLogo::before {
+    content: "\f0a3";  /* this is your text. You can also use UTF-8 character codes as I do here */
+    font-family: FontAwesome;
+    left:-5px;
+    position:absolute;
+    top:0;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #333;
+    padding-right: 10px;
+}
+.bold{
+    display: block;
+    clear: both;
+    font-weight: bold;
+}
+.threePointHighlight .highlightCheckMark{
+    float: left;
+    padding-right:2px;
+}
+.threePointHighlight .highlightCheckMark::before{   
+    content: "\f00c";  /* this is your text. You can also use UTF-8 character codes as I do here */
+    font-family: FontAwesome;
+    color:rgb(11, 192, 11);
+    display: inline-block;
+}
+.pr-15{
+    padding-left:15px;
+}
+.img-responsive {
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+.footer-top .social-icons-footer a:first-child {
+    border-left: 1px solid #40A6C2;
+}
+.footer-top .social-icons-footer a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-right: 1px solid #40A6C2;
+    float: left;
+    height: 43px;
+}

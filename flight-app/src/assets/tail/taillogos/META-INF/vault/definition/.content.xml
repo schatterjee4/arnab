@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:vlt="http://www.day.com/jcr/vault/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:created="{Date}2018-09-06T19:34:55.281+08:00"
+    jcr:createdBy="sharmistha.chatterjee@cognizant.com"
+    jcr:description=""
+    jcr:lastModified="{Date}2018-09-06T19:34:55.281+08:00"
+    jcr:lastModifiedBy="sharmistha.chatterjee@cognizant.com"
+    jcr:primaryType="vlt:PackageDefinition"
+    buildCount="1"
+    builtWith="Adobe Experience Manager-6.1.0.SP2-CFP16"
+    group="GLC-EtihadGuest"
+    lastUnwrapped="{Date}2018-09-06T19:34:55.281+08:00"
+    lastUnwrappedBy="sharmistha.chatterjee@cognizant.com"
+    lastWrapped="{Date}2018-09-06T19:34:55.281+08:00"
+    lastWrappedBy="sharmistha.chatterjee@cognizant.com"
+    name="taillogos"
+    version="">
+    <filter jcr:primaryType="nt:unstructured">
+        <f0
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            root="/content/dam/eag/etihadairways/selfservicehub/global/tail-logos"
+            rules="[]"/>
+    </filter>
+</jcr:root>

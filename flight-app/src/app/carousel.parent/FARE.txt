@@ -1,0 +1,102 @@
+<div class="tabs-content clear flight-schedule container-fluid " data-trip-index="0" data-bundle-product="" data-bundle-amount="0">
+    <div class="flight-component">
+        <div class="container-fluid">
+            <div class="row row-table pr-1 flight-component-head">
+                
+                <div class="col-5"></div>
+                <div class="col-7 text-center">CALCULATE FARE</div>
+               <!-- <div class="col-2 brandLadderWrapper">
+                    <div class="brandLadder brandLadderFirst">
+                    </div>
+                </div>
+                <div class="col-2 brandLadderWrapper">
+                    <div class="brandLadder brandLadderSecond">
+                    </div>
+                </div>
+                <div class="col-2 brandLadderWrapper">
+                    <div class="brandLadder brandLadderThird">
+                    </div>
+                </div>-->
+            </div>
+            <div class="row row-table">
+                <div class="col-5 detail-container pr-0">
+                    <div class="container padding-md-none">
+                        <!--<div class="row row-table padding-md-none">
+                                <div class="col-12 pull-left text-left"><span>DL_8999</span></div>
+                        </div>-->
+                        <div class="row row-table padding-md-none">
+
+                            <div class="col-8 flight-schedule-item text-left  flight-schedule__selected-date">
+                                <span>DL_8999</span>
+                            </div>
+
+                            <div class="col-4 flight-schedule-item text-right pr-0 pl-0 flight-schedule__selected-currency bookingcurrencycode">
+                                <span>2 hr 2 min</span>
+                            </div>
+                        </div>
+                        <div class="row row-table padding-md-none">
+
+                            <div class="col-5 padding-right-md-none text-left flight-schedule-item flight-schedule-time">
+                                <span class="tripTime">
+                                    7:15
+                                    <sub>AM</sub>
+                                </span>
+                            </div>
+                            <div class="col-2 flight-schedule-item flight-schedule-time">
+                                <span class="to-icon">
+                                </span>
+
+
+                            </div>
+                            <div class="col-5 flight-schedule-item text-right pr-0 flight-schedule-time bookingcurrencycode">
+                                <span class="tripTime">
+                                    8:15
+                                    <sub>AM</sub>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row row-table ">
+                            <div class="col-12">
+                                <div class="row ">
+                                    <div class="col-6 pr-0 text-left">
+                                        Phoenix (PHX)
+                                    </div>
+                                    <div class="col-6 pr-0 text-right">
+                                        Atlanta Atlanta Atlanta Atlanta (ATL)
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--<div class="row row-table ">
+                            <div class="col-6 details-expand">
+                                <a href="javascript:void(0);" role="button" class="detailslink" aria-expanded="false">
+
+                                    DETAILS
+                                </a>
+                                <span></span>
+                            </div>
+                        </div>-->
+                        <div class="row row-table border-connector-row">
+                            <!--<div class="col-12 border-connector">
+                                <div class="row ">
+                                    <div class="col-5 pr-0 text-left">
+                                        AUH
+                                    </div>
+                                    <div class="col-5 pr-0 text-right">
+                                        KKH
+
+                                    </div>
+                                </div>
+                            </div>-->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-7"></div>
+    </div>
+
+</div>

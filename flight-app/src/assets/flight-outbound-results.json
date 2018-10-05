@@ -1,0 +1,49 @@
+{
+    "flightDetails":
+           [
+                  {
+                        "carrier":"6E",
+                        "startTime":"6:05 am",
+                        "endTime":"8:30 am",
+                        "carrierName":"Indigo",
+                        "source":"CCU",
+                        "destination":"DEL",
+                        "duration":"2 hr 30 min",
+                        "category":"Nonstop",
+                        "price":"3500"
+                  },
+                  {
+                        "carrier":"ST",
+                        "startTime":"6:00 am",
+                        "endTime":"8:00 am",
+                        "carrierName":"Spicejet",
+                        "source":"CCU",
+                        "destination":"DEL",
+                        "duration":"2 hr 00 min",
+                        "category":"Nonstop",
+                        "price":"5000"
+                  },
+                  {
+                        "carrier":"IA",
+                        "startTime":"6:05 am",
+                        "endTime":"8:30 am",
+                        "carrierName":"Indian Airlines",
+                        "source":"CCU",
+                        "destination":"DEL",
+                        "duration":"2 hr 30 min",
+                        "category":"Nonstop",
+                        "price":"7500"
+                  },
+                  {
+                        "carrier":"KF",
+                        "startTime":"6:05 am",
+                        "endTime":"8:30 am",
+                        "carrierName":"Kingfisher",
+                         "source":"CCU",
+                        "destination":"DEL",
+                        "duration":"2 hr 30 min",
+                        "category":"Nonstop",
+                        "price":"500"
+                  }
+           ]
+    }

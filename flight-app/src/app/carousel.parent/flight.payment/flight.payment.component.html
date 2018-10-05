@@ -1,0 +1,108 @@
+<div class="tabs-content clear flight-schedule container-fluid " data-trip-index="0" data-bundle-product="" data-bundle-amount="0">
+    <div class="container">
+
+
+        <div class="row row-table ">
+            <div class="container">
+                <div id="Checkout" class="inline row row-table">
+                    <h1>Pay Invoice</h1>
+                    <form [formGroup]="myPaymentForm" (ngSubmit)="onSubmit()">
+
+                        <div class="row row-table card-row">
+
+                            <input type="radio" class="custom" id="fop-cc" value="cc" formControlName="fop">
+                            <label for="fop-cc" class="radiolabel">
+                        <span></span>Card Payment
+                    </label>
+                            <input type="radio" class="custom" id="fop-pp" value="pp" formControlName="fop" (click)="generatePoints(myPaymentForm.value.totalPrice)">
+                            <label for="fop-pp" class="radiolabel">
+                        <span></span>Points Pay
+                    </label>
+                        </div>
+                        <div class=" row row-table fop-cc-div fop-inactive" [ngClass]="{'fop-active':myPaymentForm.value.fop == 'cc'}">
+                            <div class="card-row col-12">
+                                <span class="visa"></span>
+                                <span class="mastercard"></span>
+                                <span class="amex"></span>
+                                <span class="discover"></span>
+                            </div>
+                            <div class="col-12">
+
+                                <div class="form-group">
+                                    <label for="PaymentAmount">Payment amount</label>
+                                    <div class="amount-placeholder">
+                                        <span>$</span>
+                                        <span>{{myPaymentForm.value.totalPrice}}</span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label or="NameOnCard">Name on card</label>
+                                    <input id="NameOnCard" class="form-control" type="text" maxlength="255">
+                                </div>
+                                <div class="form-group">
+                                    <label for="CreditCardNumber">Card number</label>
+                                    <input id="CreditCardNumber" type="tel" [(ngModel)]="ccNumber" [ngModelOptions]="{standalone: true}" (keyup)="ccFormat($event)" pattern="\d*" class="cc-number null card-image form-control">
+                                </div>
+                                <div class="expiry-date-group form-group">
+                                    <label for="ExpiryDate">Expiry date</label>
+                                    <input id="ExpiryDate" type="tel" pattern="\d*" class="cc-expires form-control" placeholder="MM / YY" maxlength="7">
+                                </div>
+                                <div class="security-code-group form-group">
+                                    <label for="SecurityCode">Security code</label>
+                                    <div class="input-container">
+                                        <input id="SecurityCode" class="form-control" type="password">
+                                        <i id="cvc" class="fa fa-question-circle"></i>
+                                    </div>
+                                    <div class="cvc-preview-container two-card hide">
+                                        <div class="amex-cvc-preview"></div>
+                                        <div class="visa-mc-dis-cvc-preview"></div>
+                                    </div>
+                                </div>
+                                <div class="zip-code-group form-group">
+                                    <label for="ZIPCode">ZIP/Postal code</label>
+                                    <div class="input-container">
+                                        <input id="ZIPCode" class="form-control" type="text" maxlength="10">
+                                        <a tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-placement="left" data-content="Enter the ZIP/Postal code for your credit card billing address."><i class="fa fa-question-circle"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" row row-table fop-pp-div fop-inactive" [ngClass]="{'fop-active':myPaymentForm.value.fop == 'pp'}">
+                            <div class="container-fluid">
+                                <div class=" row row-table">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="PaymentAmount">Payment amount</label>
+                                            <div class="amount-placeholder">
+                                                <span>$</span>
+                                                <span>{{myPaymentForm.value.totalPrice}}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" row row-table" *ngIf="points>0">
+                                    <div class="col-6">
+                                        <label for="pointsAvailable">Points available: <span class="amount-placeholder">{{points}}</span></label>
+                                    </div>
+                                    <div class="col-6 amount-placeholder" *ngIf="points>0">
+                                        <div class="form-group text-left">
+
+
+                                            <span class="ico-check-span"><input type="checkbox"  [checked]="check" id="usePoints" (change)="updatePoints(myPaymentForm.value.totalPrice,$event)" >
+                                <label for="usePoints" ><span class="ico-tick-checkbox"></span>Use</label>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button id="PayButton" class="btn btn-block btn-success submit-button paynowBtn" type="submit" [disabled]="check==false && myPaymentForm.value.fop == 'pp'">
+                                    <span class="submit-button-lock"></span>
+                                    <span class="align-middle">Pay ${{myPaymentForm.value.totalPrice}}</span>
+                                </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>

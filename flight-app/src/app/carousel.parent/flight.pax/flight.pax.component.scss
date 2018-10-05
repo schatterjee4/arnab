@@ -1,0 +1,255 @@
+@import url('../carousel.parent.component.scss');
+/deep/ .card .btn {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 20px;
+    //background: url("./../../../assets/adult.svg");
+    vertical-align: baseline;
+    color: #40403f;
+    font-weight: 300;
+    font-size: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/deep/ .card {
+    justify-content: center;
+    // align-items: center;
+    // align-content: center;
+    cursor: pointer;
+    flex-flow: column wrap;
+    display: flex;
+    background-color: #eaeaea;
+   /* border-bottom: 1px solid rgba(0, 0, 0, 0.125)!important; 
+    border-top: 1px solid rgba(0, 0, 0, 0.125)!important; 
+    border-left:unset!important; 
+    border-right: unset!important;  */
+    border:unset!important; 
+}
+
+/deep/ .card-header {
+    padding: 0;
+    flex: 0 0 100%;
+    background-color:  #f2f2f2;
+}
+
+/deep/.card .btn::before {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin: 1px;
+    vertical-align: middle;
+    left: 40%;
+}
+
+
+/*/deep/ .card-header h5::after{
+  //@at-rootcontent:"\f078";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+--adjust as necessary--
+  color: #40403f;
+  font-size: 11px;
+  position: absolute;
+  top: 12%;
+  right: 5%;
+  vertical-align: middle;
+  cursor: pointer;
+  width:80px;
+  height:80px;
+
+ }*/
+
+/deep/ div[id^=pax-adt] .btn::before {
+    background-image: url("./../../../assets/adult.svg");
+    /*--adjust as necessary--*/
+    color: #40403f;
+    font-size: 11px;
+    position: absolute;
+    //top: 12%;
+    vertical-align: middle;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    padding-left: 15px;
+}
+
+/deep/ div[id^=pax-adt] .btn::before {
+    content: "Adult";
+}
+
+/deep/ div[id^=pax-chd] .btn::before {
+    background-image: url("./../../../assets/child.svg");
+    color: #40403f;
+    font-size: 11px;
+    position: absolute;
+    //top: 12%;
+    vertical-align: middle;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    padding-left: 15px;
+}
+
+/deep/ div[id^=pax-chd] .btn::before {
+    content: "Child";
+}
+
+/deep/ div[id^=pax-inf] .btn::before {
+    background-image: url("./../../../assets/infant.svg");
+    color: #40403f;
+    font-size: 11px;
+    position: absolute;
+    // top: 12%;
+    vertical-align: middle;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    padding-left: 15px;
+}
+
+/deep/ div[id^=pax-inf] .btn::before {
+    content: "Infant";
+}
+
+/deep/ .card .btn::after {
+    position: absolute;
+    right: 5%;
+    vertical-align: baseline;
+    color: #40403f;
+    font-weight: 300;
+    font-size: 12px;
+    text-transform: uppercase;
+    content: '';
+   
+    /* also add this line of code to make it work*/
+}
+/deep/ .card .btn::after{
+    background-image: url("./../../../assets/global--sprite.png");
+    background-position: -412px -231px;
+    width: 12px;
+    height: 7px;
+}
+/deep/ .card .btn.collapsed::after{
+    background-image: url("./../../../assets/global--sprite.png");
+    background-position: -412px -241px;
+    width: 12px;
+    height: 7px;
+}
+.passDetailLbl {
+    color: #6f6660;
+    font-size: 16px;
+    //padding-top: 20px!important;
+    //padding-bottom: 20px!important;
+}
+
+/deep/ .ngbPanelContent {
+    padding: 20px;
+}
+/deep/ .card-body{
+
+    cursor: initial!important;
+}
+.row-detail {
+    padding: 10px!important;
+}
+
+.flight-pax-table {
+    border-bottom: 1px solid #f2f2f2;
+    border:1px solid #ccc !important;
+    background-color: #f2f2f2;
+   // padding-left:5px !important;
+    //padding-right: 5px !important;
+    padding:0px;
+}
+.flight-pax-table-header {
+border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+padding-top:5px!important;
+//background: #666;
+background: transparent;
+color: #333;
+font-size:20px;
+font-weight: 700;
+font-family: Whitney-Medium;
+}
+.row-flex{
+    display: flex;
+    align-items: center;
+   // justify-content: center;
+   font-size: 16px !important;
+}
+.row-pax-payment{
+    background-color: #e1e1e1;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    min-height:50px;
+}
+.booking-cart-section-heading h2,.booking-cart-section-pas-heading h2{
+   
+    font-size: 16px !important;
+    flex:1;
+    color:#fff;
+}
+.booking-cart-section-pas-heading h2{
+    color:#666;
+}
+.booking-cart-section-heading h2::after{
+   
+    font-family: "FontAwesome";
+    font-style: normal;
+    width: 40px;
+    height: 40px;
+    content: "\f072";    
+}
+.booking-cart-section-pas-heading h2::after{
+   
+    font-family: "FontAwesome";
+    font-style: normal;
+    width: 40px;
+    height: 40px;
+    content: "\f0c0";    
+    color:#666;
+}
+.booking-cart-section-heading{
+    position: relative;
+    padding: 12px;
+    background: #666;
+    color: #fff;
+    font-family: Whitney-Medium;
+}
+.booking-cart-section-pas-heading{
+    position: relative;
+    padding: 12px;
+    background: #f2f2f2;
+    color: #fff;
+    border-left:1px solid #ccc;
+    border-right:1px solid #ccc;
+    font-family: Whitney-Medium;
+}
+.booking-cart-section{
+    position: relative;
+    padding: 12px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.booking-cart-section-detail{
+    border:1px solid #ccc;
+}
+.small-to-icon::before {
+    
+    font-family: "FontAwesome";
+    font-style: normal;
+    width: 10px;
+    height: 10px;
+    content: "\f178 ";  
+}
+.required {
+    color: #c00;
+    border: none;
+    text-decoration: none;
+}

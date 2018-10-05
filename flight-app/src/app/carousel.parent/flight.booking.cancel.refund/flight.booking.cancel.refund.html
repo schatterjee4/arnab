@@ -1,0 +1,122 @@
+<div class="tabs-content clear flight-schedule container-fluid " data-trip-index="0" data-bundle-product="" data-bundle-amount="0">
+    <div class="container" *ngIf="!(_isLoading$ | async)">
+        <div class="row m0-xs-down">
+            <div class="p0-xs-down flight-section-search-head col-8"></div>
+        </div>
+        <div class="row row-table refund-record ">
+            <div class="outbound-header col-12 pl-0 ">
+                <h2>Review Information</h2>
+            </div>
+        </div>
+        <form [formGroup]="mycancelForm" (ngSubmit)="onSubmit()">
+
+            <div class="row row-table refund-record ">
+
+
+                <div class="bg-color-1 text-1 refund-record-header col-12 ">Flight {{mycancelForm.value.data.carrier}} {{mycancelForm.value.data.originDescr[0]}} ({{mycancelForm.value.data.source}}) > {{mycancelForm.value.data.destDescr[0]}} ({{mycancelForm.value.data.destination}})</div>
+            </div>
+            <div class="row row-table refund-details ">
+
+                <div class="col-md-2 hdr-cell pax-record-val ">
+                    <span class="flight-detail pl-0 ">From
+									</span>
+                    <span class="flight-icon "></span>
+
+                    <span class="flight-detail ">To
+										</span>
+                </div>
+                <div class="col-md-2 hdr-cell ">Trip duration</div>
+                <div class="col-md-2 hdr-cell ">Flight number</div>
+                <div class="col-md-2 hdr-cell ">Operated by</div>
+                <div class="col-md-2 hdr-cell ">Aircraft</div>
+                <div class="col-md-2 hdr-cell last-col ">Class</div>
+            </div>
+
+
+            <div class="row row-table refund-details ">
+                <div class="col-md-2 cell ">{{mycancelForm.value.data.source}} > {{mycancelForm.value.data.destination}}</div>
+                <div class="col-md-2 cell ">{{mycancelForm.value.data.duration}} </div>
+                <div class="col-md-2 cell ">{{mycancelForm.value.data.carrierName}}</div>
+                <div class="col-md-2 cell ">{{mycancelForm.value.data.airlineDescr}}</div>
+                <div class="col-md-2 cell ">{{mycancelForm.value.data.aircraftType}}</div>
+                <div class="col-md-2 cell last-col ">Economy</div>
+            </div>
+
+
+
+
+            <div class="refund-record  row row-table">
+                <div class="col-6  offset-3 refund-rows">
+                    <div class="container refund-row-detail">
+
+                        <div class="row row-table  margin-top-5">
+                            <div class="col-12 refund-header">
+                                <h4>Refund Details</h4>
+                            </div>
+                        </div>
+                        <div class="row row-table text-bold-2 ">
+                            <div class="col-8 ">Total Amount Paid</div>
+                            <div class="col-4  ">${{mycancelForm.value.data.price}}</div>
+                        </div>
+
+                        <div class="row row-table ">
+                            <div class="col-8 ">Base Fare(per pax)-<span class="refundInd">{{mycancelForm.value.data.baseFareDescr}}</span></div>
+                            <div class="col-4  ">${{mycancelForm.value.data.baseFare}}</div>
+                        </div>
+
+                        <div class="row row-table ">
+                            <div class="col-8 ">Airport Tax(per pax)-<span class="refundInd">{{mycancelForm.value.data.taxAirportDescr}}</span></div>
+                            <div class=" col-4 ">${{mycancelForm.value.data.taxAirport}}</div>
+                        </div>
+
+                        <div class="row row-table ">
+                            <div class="col-8 ">Fuel Tax(per pax)-<span class="refundInd">{{mycancelForm.value.data.taxFuelDescr}}</span> </div>
+                            <div class=" col-4 ">${{mycancelForm.value.data.taxFuel}}</div>
+                        </div>
+
+                        <div class="row row-table ">
+
+                            <div class="col-8 ">Service Charge(per pax)-<span class="refundInd">{{mycancelForm.value.data.chargeServiceDescr}}</span></div>
+                            <div class=" col-4  ">${{mycancelForm.value.data.chargeService}}</div>
+                        </div>
+
+                        <div class="row row-table ">
+
+                            <div class="col-8 ">Development Fees-<span class="refundInd">{{mycancelForm.value.data.feesDevelopmentDescr}}</span></div>
+                            <div class=" col-4  ">${{mycancelForm.value.data.feesDevelopment}}</div>
+                        </div>
+
+                        <div class="row row-table ">
+
+                            <div class="col-8 ">Cancellation Fee</div>
+                            <div class=" col-4 ">${{mycancelForm.value.data.cancellationCharge}}</div>
+                        </div>
+
+                        <div class="row row-table ">
+
+                            <div class="col-8 ">Amount Refundable</div>
+                            <div class=" col-4  ">${{mycancelForm.value.data.refundAmount}}</div>
+                        </div>
+                        <div class="row row-table card-details cancel-confirm" *ngIf="mycancelForm.value.data.fop=='cc'">
+                            <div class="col-3 pr-0">Card Details</div>
+                            <div class="col-5 pl-0"><span class="{{mycancelForm.value.data.ccType.toLowerCase()}} card"></span> <span>ending in {{mycancelForm.value.data.ccLastFour}}</span></div>
+
+                            <div class=" col-4 ">${{mycancelForm.value.data.refundAmount}}</div>
+                        </div>
+
+                        <div class="row row-table cancel-confirm">
+
+                            <div class="col-8 cancel-confirm-col last-col">Confirm Cancellation</div>
+                            <div class=" col-4  cancel-confirm-col pl-0 text-left">
+                                <span><input src="" class="btn  paynowBtn pull-left" id="pay-submit" name="ap3-flights-submit" type="button" value="No" (click)="redirectToRoute('/view')"></span>
+                                <span class="ml-1"><input src="" class="btn  paynowBtn pull-left" id="pay-submit" name="ap3-flights-submit" type="submit" value="Yes"></span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3"></div>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,89 @@
+.l-horizontal-samewidth-list {
+    list-style: none;
+    margin-top: 36px;
+    margin-bottom: 1px;
+    display: flex;
+    border-bottom: 1px solid #BFBFBF;
+}
+
+.step-navigation-step {
+    display: inline-block;
+    position: relative;
+    border: 1px solid #CFCFCF;
+    border-width: 0 1px 0 0;
+    border-top-width: 0px;
+    border-right-width: 1px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    line-height: 1;
+    flex: 1;
+    list-style: none;
+    font-size: 14px;
+    width: 10px;
+    padding: 10px;
+}
+
+.icon-step:not(:last-child) {
+    border: 2px solid #9e9890;
+    border-radius: 20px;
+}
+
+.icon-step {
+    display: inline-block;
+    //vertical-align: middle;
+    //  display: inline-flex;
+    //  align-items: center;    
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    line-height: 17px;
+    background: #fff;
+    margin: -2px 2px 0 0;
+}
+
+.step-navigation-step.active .icon-step {
+    color: #fff;
+    background: #6f6660;
+    border-color: #6f6660;
+}
+
+.step-navigation-step.active>span::after,
+.step-navigation-step.active>a>span::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -3px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-bottom-color: #fff;
+    border-top: none;
+    clear: both;
+    margin-left: -10px;
+}
+
+.step-navigation-step.active>span::before,
+.step-navigation-step.active>a>span::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-bottom-color:#BFBFBF;
+    border-top: none;
+    clear: both;
+    margin-left: -10px;
+}
+
+.step-title {
+    padding: 2px;
+    font-weight: 500;
+    font-size: 15px;
+    color: #6f6660; //#40403f;
+}
+
+.step-caption {}

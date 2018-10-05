@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:tiff="http://ns.adobe.com/tiff/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="8a763236-b7c2-4d4c-985f-28071d0fc12e">
+    <jcr:content
+        cq:lastReplicated="{Date}2018-04-22T20:52:20.706+04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:name="S2.png"
+        cq:parentPath="/content/dam/eag/etihadairways/selfservicehub/global/tail-logos"
+        jcr:lastModified="{Date}2018-06-07T21:58:59.470+08:00"
+        jcr:lastModifiedBy="vivek.sampath@cognizant.com"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:Bitsperpixel="{Long}32"
+            dam:extracted="{Date}2018-06-07T21:58:57.391+08:00"
+            dam:Fileformat="PNG"
+            dam:MIMEtype="image/png"
+            dam:Numberofimages="{Long}1"
+            dam:Numberoftextualcomments="{Long}0"
+            dam:Physicalheightindpi="{Long}-1"
+            dam:Physicalheightininches="{Decimal}-1.0"
+            dam:Physicalwidthindpi="{Long}-1"
+            dam:Physicalwidthininches="{Decimal}-1.0"
+            dam:Progressive="no"
+            dam:sha1="281cdd716b16a2a12d7e5e9a61a763fc28e52279"
+            dam:size="{Long}8860"
+            dc:format="image/png"
+            dc:modified="{Date}2018-06-07T21:58:59.038+08:00"
+            jcr:lastModified="{Date}2018-06-07T21:58:59.038+08:00"
+            jcr:lastModifiedBy="vivek.sampath@cognizant.com"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            tiff:ImageLength="{Long}112"
+            tiff:ImageWidth="{Long}112"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,168 @@
+<div class="tabs-content clear flight-schedule container-fluid " data-trip-index="0" data-bundle-product="" data-bundle-amount="0">
+    <div class="container">
+        <div class="row m0-xs-down  ">
+
+            <div class=" p0-xs-down flight-section-search-head col-7">
+            </div>
+        </div>
+        <div class="row row-table margin-top-5">
+            <!-- {{mydetailForm.value|json}}-->
+
+            <div class="flight-pax-table col-8">
+                <div class="col-12 m-0 flight-pax-table-header">
+                    <h2>Personal Details</h2>
+                </div>
+                <form [formGroup]="myPaxForm" (ngSubmit)="onSubmit()" #formDir="ngForm">
+                    <!--adult rows-->
+                    <div class="col-12 p-0">
+                        <ng-container formArrayName="items" *ngFor="let item of formData.controls; let i = index;">
+                            <div [formGroupName]="i">
+                                <ngb-accordion #acc="ngbAccordion"  activeIds="pax-{{item.value.paxType}}-0">
+
+                                    <ngb-panel id="pax-{{item.value.paxType}}-{{i}}" class="adt">
+                                        <ng-template ngbPanelContent>
+                                            <div class="container ">
+                                                <div class="row ml-0 pad-5 row-flex">
+                                                    <div class="col-2">
+                                                        <label class="requiredLabel passDetailLbl">First Name<abbr class="required" title="Mandatory field">*</abbr></label>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <input id="{{item.value.paxType}}-firstName-{{i}}" type="text" class=" row-detail form-control no-border-rad" formControlName="firstName" />
+                                                        <div *ngIf="item.controls.firstName.errors && formDir.submitted"> 
+                                                                <div *ngIf="item.controls.firstName.errors.required">
+                                                                       First Name required.
+                                                                </div> 		   
+                                                             
+                                                             </div> 
+                                                    </div>
+
+                                                </div>
+                                                <div class="row ml-0 pad-5 row-flex">
+                                                    <div class="col-2">
+
+                                                        <label class="requiredLabel passDetailLbl">Last Name<abbr class="required" title="Mandatory field">*</abbr></label>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <input id="{{item.value.paxType}}-lastName-{{i}}" type="text" class=" row-detail form-control no-border-rad" formControlName="lastName" />
+                                                        <div *ngIf="item.controls.lastName.errors && formDir.submitted"> 
+                                                                <div *ngIf="item.controls.lastName.errors.required">
+                                                                        Last Name required.
+                                                                </div> 		   
+                                                             
+                                                             </div> 
+                                                    </div>
+                                                </div>
+                                                <div class="row ml-0 pad-5 row-flex">
+                                                    <div class="col-2">
+
+                                                        <label class="requiredLabel passDetailLbl">Email@<abbr class="required" title="Mandatory field">*</abbr></label>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <input id="{{item.value.paxType}}-email-{{i}}" type="text" class=" row-detail form-control no-border-rad" formControlName="email" />
+                                                        <div *ngIf="item.controls.email.errors && formDir.submitted"> 
+                                                                <div *ngIf="item.controls.email.errors.required">
+                                                                     Email required.
+                                                                </div> 		   
+                                                                <div *ngIf="item.controls.email.errors.pattern">
+                                                                     Email not valid.
+                                                                </div> 
+                                                             </div> 
+                                                    </div>
+                                                </div>
+
+                                                <div class="row ml-0 pad-5 row-flex">
+                                                    <div class="col-2">
+
+                                                        <label class="requiredLabel passDetailLbl">Phone No<abbr class="required" title="Mandatory field">*</abbr></label>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <input id="{{item.value.paxType}}-phnNo-{{i}}" type="text" class=" row-detail form-control no-border-rad" formControlName="phnNo" />
+                                                        <div *ngIf="item.controls.phnNo.errors && formDir.submitted"> 
+                                                                <div *ngIf="item.controls.phnNo.errors.required">
+                                                                       Phone Number required.
+                                                                </div> 		   
+                                                             
+                                                             </div> 
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </ng-template>
+                                    </ngb-panel>
+
+                                </ngb-accordion>
+                            </div>
+                        </ng-container>
+                    </div>
+                    <div class="col-12 padding-bt-2 padding-top-2 row-pax-payment">
+                        <input src="" class="btn submit paynowBtn" id="pay-submit" name="ap3-flights-submit" type="submit" value="Proceed to Payment">
+                    </div>
+                </form>
+
+            </div>
+            <!--child rows-->
+            <!-- <ng-container *ngFor="let chd  of childNos">
+
+
+                            <ngb-panel  class="chd">
+                                <ng-template ngbPanelContent>
+                                    <span class="tab--icon picto picto-passenger-adult" aria-hidden="true"></span>
+                                </ng-template>
+                            </ngb-panel>
+
+                        </ng-container>
+                        <ng-container *ngFor="let inf  of infantNos" class="inf">
+
+
+                            <ngb-panel id="pax-inf-{{inf}}">
+                                <ng-template ngbPanelContent>
+                                    <span class="tab--icon picto picto-passenger-adult" aria-hidden="true"></span>
+                                </ng-template>
+                            </ngb-panel>
+
+                        </ng-container>-->
+
+
+            <div class=" col-3 offset-1">
+                <div class="row row-table">
+                    <div class="col-12 pb-0 booking-cart-section booking-cart-section-heading">
+                        <h2 class="booking-cart-section-title">
+                            Flights
+                        </h2>
+                    </div>
+                </div>
+                <div class="row row-table booking-cart-section-detail">
+                    <div class="col-5 booking-cart-section text-right">
+                        {{flightData.origin.value}}
+                    </div>
+                    <div class="col-2 booking-cart-section ">
+                        <span class="small-to-icon">
+                            </span>
+                    </div>
+                    <div class="col-5 booking-cart-section">
+                        {{flightData.dest.value}}
+                    </div>
+                </div>
+                <div class="row row-table">
+                    <div class="col-12 pb-0 booking-cart-section booking-cart-section-pas-heading">
+                        <h2 class="booking-cart-section-title">
+                            Passenger details
+                        </h2>
+                    </div>
+                </div>
+                <div class="row row-table booking-cart-section-detail">
+                    <div class="col-12 booking-cart-section text-right" *ngIf="flightData.adult>0">
+                        Adult: {{flightData.adult}}
+                    </div>
+                    <div class="col-12 booking-cart-section" *ngIf="flightData.child>0">
+                        Child: {{flightData.child}}
+                    </div>
+                    <div class="col-12 booking-cart-section" *ngIf="flightData.infant>0">
+                        Infant: {{flightData.infant}}
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

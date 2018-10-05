@@ -1,0 +1,310 @@
+<div class="tabs-content clear flight-schedule container-fluid " data-trip-index="0" data-bundle-product="" data-bundle-amount="0">
+    <div class="container">
+        <div class="row m0-xs-down  ">
+
+            <div class=" p0-xs-down flight-section-search-head col-7">
+            </div>
+        </div>
+        <form [formGroup]="mydetailForm" (ngSubmit)="onSubmit()">
+            <div class="row row-table margin-top-5">
+                <!-- {{mydetailForm.value|json}}-->
+                <div class=" col-7">
+                    <div class="row row-table">
+                        <div class=" col-12 flight-out-component pl-0" *ngIf="outboundFlights?.length > 0">
+                            <div class="container-fluid">
+                                <div class="row row-table pr-1 flight-component-head">
+                                    <div class="col-9  p-0 ">
+                                        <div class="container ">
+
+                                            <div class="row row-table">
+                                                <div class="col-2 flight-component-head-icon">
+                                                    <div class=" col-12 flight-component-icon"></div>
+                                                </div>
+                                                <div class="col-10">
+                                                    <h2 class="m-0 p-2">Outbound Flights</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3"></div>
+                                </div>
+                                <div *ngFor="let flight of outboundFlights; index as i" class="row row-table">
+                                    <div class="col-9 detail-container detail-container-head">
+                                        <div class="row row-table">
+                                            <div class="col-2 flight-section text-center tripDateParent">
+                                                <span class="tripDate ">{{flightsearchdata.datefrom}} </span>
+                                            </div>
+                                            <div class="col-10 flight-section flight-section-details">
+                                                <div class="container ">
+                                                    <div class="row row-table padding-top-2">
+                                                        <div class="col-8 flight-schedule-item text-left  flight-schedule__selected-date">
+                                                            <span class="trip-head flight-no">{{flight.carrierName}}</span>
+                                                            <span class="{{flight.carrier}}-logo"></span>
+                                                        </div>
+
+                                                        <div class="col-4 flight-schedule-item text-right  pl-0 flight-schedule__selected-currency bookingcurrencycode">
+                                                            <span class="trip-head">{{flight.duration}}</span>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="row row-table ">
+
+                                                        <div class="col-4 padding-right-md-none text-left flight-schedule-item flight-schedule-time">
+                                                            <span class="tripTime">
+                                                                {{flight.startTime}}
+                                                            </span>
+                                                        </div>
+                                                        <div class="col-4 p-0 flight-schedule-item flight-schedule-time">
+                                                            <span class="to-icon">
+                                                            </span>
+
+
+                                                        </div>
+                                                        <div class="col-4 flight-schedule-item text-right  flight-schedule-time bookingcurrencycode">
+                                                            <span class="tripTime">
+                                                                {{flight.endTime}}
+                                                            </span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row row-table ">
+                                                        <div class="col-12">
+                                                            <div class="row  row-table padding-bt-2">
+                                                                <div class="col-5 text-left">
+                                                                    {{flight.source}}
+                                                                </div>
+                                                                <div class="col-2 text-center text-cap p-0">
+                                                                    {{flight.category}}
+                                                                </div>
+                                                                <div class="col-5  text-right">
+                                                                    {{flight.destination}}
+                                                                </div>
+                                                            </div>
+                                                            <div class="row row-table padding-top-5">
+                                                                <div class="col-12 text-right">
+                                                                    <span class="amenityIcons icon_twoku"></span>
+                                                                    <span class="amenityIcons icon_usb"></span>
+                                                                    <span class="amenityIcons icon_110"></span>
+                                                                    <span class="amenityIcons icon_stu"></span>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 detail-container  detail-container-head ">
+                                        <div class="row row-table h-100">
+                                            <div class="col-12 flight-section-details  p-0">
+
+                                                <input type="hidden" #refinpuOne id="fare-route-one-rad-{{i}}" value={{flight.price}} />
+                                                <input type="hidden" #refinputOtOne id="fare-route-ot-one-rad-{{i}}" value={{flight.startTime}} />
+                                                <input type="hidden" #refinpuDtOne id="fare-route-dt-one-rad-{{i}}" value={{flight.endTime}} />
+                                                <input type="hidden" #refinputIndex value="{{i}}" />
+                                                <input type="radio" class="customfare" id="fare-route-one-{{i}}" value="" formControlName="fareRouteOne" />
+                                                <label for="fare-route-one-{{i}}" [ngClass]="{'checked':flight.price == mydetailForm.value.fareRouteOneVal}" (click)="updatePriceOne(refinpuOne, refinputOtOne,refinpuDtOne, refinputIndex)">
+
+    
+                                                            <div class="currencydiv flight-section-details">
+                                                                <span class="tblCntBigTxt">
+    
+                                                                    <span class="checkMark"></span>
+                                                                    <sup class="currencyCode">$</sup>
+                                                                    <span class="priceBfrDec">{{flight.price.split('.')[0]}}</span>
+                                                                    <!---->
+                                                                    <sup>{{flight.price.split('.')[1]}}</sup>
+                                                                </span>
+                                                               
+                                                            </div>
+    
+                                                    </label>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end-->
+                        <div class=" col-12 flight-out-component pl-0" *ngIf="inboundFlights?.length > 0">
+                            <div class="container-fluid">
+                                <div class="row row-table pr-1 flight-component-head">
+                                    <div class="col-9  p-0 ">
+                                        <div class="container ">
+
+                                            <div class="row row-table">
+                                                <div class="col-2 flight-component-head-icon">
+                                                    <div class=" col-12 flight-component-icon"></div>
+                                                </div>
+                                                <div class="col-10 ">
+                                                    <h2>Inbound Flights</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3"></div>
+                                </div>
+                                <div *ngFor="let flight of outboundFlights; index as i" class="row row-table">
+                                    <div class="col-9 detail-container detail-container-head">
+                                        <div class="row row-table">
+                                            <div class="col-2 flight-section text-center tripDateParent">
+                                                <span class="tripDate ">{{flightsearchdata.dateto}} </span>
+                                            </div>
+                                            <div class="col-10 flight-section flight-section-details">
+                                                <div class="container ">
+                                                    <div class="row row-table padding-top-2">
+                                                        <div class="col-8 flight-schedule-item text-left  flight-schedule__selected-date">
+                                                            <span class="trip-head flight-no">{{flight.carrierName}}</span>
+                                                        </div>
+
+                                                        <div class="col-4 flight-schedule-item text-right  pl-0 flight-schedule__selected-currency bookingcurrencycode">
+                                                            <span class="trip-head">{{flight.duration}}</span>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="row row-table ">
+
+                                                        <div class="col-4 padding-right-md-none text-left flight-schedule-item flight-schedule-time">
+                                                            <span class="tripTime">
+                                                                    {{flight.startTime.split(' ')[0]}}
+                                                                    <sub> {{flight.startTime.split(' ')[1]}}</sub>
+                                                                </span>
+                                                        </div>
+                                                        <div class="col-4 p-0 flight-schedule-item flight-schedule-time">
+                                                            <span class="to-icon">
+                                                                </span>
+
+
+                                                        </div>
+                                                        <div class="col-4 flight-schedule-item text-right  flight-schedule-time bookingcurrencycode">
+                                                            <span class="tripTime">
+                                                                    {{flight.endTime.split(' ')[0]}}
+                                                                    <sub> {{flight.endTime.split(' ')[1]}}</sub>
+                                                                </span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row row-table ">
+                                                        <div class="col-12">
+                                                            <div class="row  row-table padding-bt-2">
+                                                                <div class="col-5 text-left">
+                                                                    {{flight.source}}
+                                                                </div>
+                                                                <div class="col-2 text-center text-cap p-0">
+                                                                    {{flight.category}}
+                                                                </div>
+                                                                <div class="col-5  text-right">
+                                                                    {{flight.destination}}
+                                                                </div>
+                                                            </div>
+                                                            <div class="row row-table padding-top-5">
+                                                                <div class="col-12 text-right">
+                                                                    <span class="amenityIcons icon_twoku"></span>
+                                                                    <span class="amenityIcons icon_usb"></span>
+                                                                    <span class="amenityIcons icon_110"></span>
+                                                                    <span class="amenityIcons icon_stu"></span>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 detail-container  detail-container-head ">
+                                        <div class="row row-table h-100">
+                                            <div class="col-12 flight-section-details p-0">
+                                                <input type="hidden" #refinpuTwo id="fare-route-two-rad-{{i}}" value={{flight.price}} />
+                                                <input type="hidden" #refinputIndex value="{{i}}" />
+                                                <input type="radio" class="customfare" id="fare-route-two-{{i}}" value="" formControlName="fareRouteTwo" />
+                                                <label for="fare-route-two-{{i}}" (click)="updatePriceTwo(refinpuTwo,refinputIndex)">
+        
+        
+                                                                <div class="currencydiv flight-section-details">
+                                                                    <span class="tblCntBigTxt">
+        
+                                                                        <span class="checkMark"></span>
+                                                                        <sup class="currencyCode">$</sup>
+                                                                        <span class="priceBfrDec">{{flight.price.split('.')[0]}}</span>
+                                                                        <!---->
+                                                                        <sup>{{flight.price.split('.')[1]}}</sup>
+                                                                    </span>
+                                                                
+                                                                </div>
+        
+                                                           
+                                                        </label>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end-->
+
+                        <div class="no-results-found" *ngIf="outboundFlights?.length <= 0 &&  inboundFlights?.length <= 0">
+                            No results found!
+                            <div class="back-arrow" (click)="redirectToRoute('/')"> <span> Go Back</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 offset-1 p-0" *ngIf="outboundFlights?.length > 0 || inboundFlights?.length > 0 ">
+                    <div class="container-fluid  flight-cost-component flight-section-details">
+                        <div class="flight-section-details flight-cost-head container ">
+                            <div class="row row-table ">
+                                <div class="col-12 ">
+                                    <div class="row row-table padding-top-2">
+                                        <div class="col-11 padding-right-2 ">
+
+                                            <span class="payHeaderTotal">Grand total : </span>
+                                            <span class="payValueTotal">${{mydetailForm.value.totalPrice}}</span>
+                                        </div>
+                                        <div class="col-11 padding-right-2 ">
+
+                                            <span class="payHeader">Base Fare : </span><span class="payValue">${{mydetailForm.value.fareRouteOneVal*1}}</span>
+                                        </div>
+                                        <div class="col-11 padding-right-2 ">
+
+                                            <!--<span class="payHeader">Airport Tax : </span> <span class="payValue">${{mydetailForm.value.taxAirport*1}}</span>
+                                        </div>
+                                        <div class="col-11 padding-right-2 ">
+
+                                            <span class="payHeader">Fuel Tax : </span><span class="payValue">${{mydetailForm.value.taxFuel*1}}</span>
+                                        </div>
+                                        <div class="col-11 padding-right-2 ">
+
+                                            <span class="payHeader">Service Charge : </span> <span class="payValue">${{mydetailForm.value.chargeService*1}}</span>
+                                        </div>
+                                        <div class="col-11 padding-right-2 ">
+
+                                            <span class="payHeader">Development fees : </span><span class="payValue">${{mydetailForm.value.feesDevelopment*1}}</span>-->
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row row-table ">
+                                <div class="col-12 text-center paynowBtnDiv ">
+                                    <input src="" class="btn submit paynowBtn" id="pay-submit" name="ap3-flights-submit" type="submit" value="Continue">
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>

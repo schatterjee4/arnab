@@ -1,0 +1,150 @@
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+    <div class="container-fluid">
+
+        <div class="row pad-5 pad-left-12">
+            <input type="radio" class="custom" id="flights-oneway" value="one" formControlName="triptype">
+            <label for="flights-oneway" class="radiolabel">
+                <span></span>One Way
+            </label>
+            <input type="radio" disabled class="custom" id="flights-return" value="round" formControlName="triptype">
+            <label for="flights-return" style="display:none" class="radiolabel">
+                <span></span>Round Trip
+            </label>
+        </div>
+        <div class="row ">
+            <div class="input-group">
+
+                <div class="col-6 pr-0">
+                    <label for="originCity" class="requiredLabel">FROM</label>
+                </div>
+                <div class="col-1 left"></div>
+                <div class="col-5 pl-0 pr-0">
+                    <label for="destCity" class="requiredLabel">TO</label>
+                </div>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="input-group">
+
+                <div class="col-6 pr-0">
+                    <input id="typeahead-basic" required [resultTemplate]="rt" [inputFormatter]="formatter" type="text" class="form-control no-border-rad ellip" formControlName="origin" [ngbTypeahead]="search" />
+                </div>
+                <div class="col-1 center">
+                    <span class="connector"></span>
+                </div>
+                <div class="col-5 pl-0 pr-0">
+                    <input id="typeahead-basic" required [resultTemplate]="rt" [inputFormatter]="formatter" type="text" class="form-control no-border-rad ellip" formControlName="dest" [ngbTypeahead]="search" />
+                </div>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="input-group">
+
+                <div class="col-6 pr-0">
+                    <div class="pd-top-10">
+
+                        <label for="originCity" class="requiredLabel">DEPATURE DATE</label>
+                    </div>
+                </div>
+                <div class="col-1 left"></div>
+                <div class="col-5 pl-0 pr-0 ">
+                    <div class="pd-top-10">
+                        <label for="destCity" [ngClass]="{ 'invisible': myForm.value.triptype=='one'}" class="requiredLabel">ARRIVAL DATE</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="input-group">
+                <div class="col-6 pr-0" id="origDate">
+                    <input type="text" required class="form-control no-border-rad custom-date" name="dp" formControlName="datefrom" ngbDatepicker #d1="ngbDatepicker">
+                    <span class="calendarClickIcon right-0" (click)="d1.toggle()" id="origDateCalIcon"></span>
+
+                </div>
+                <div class="col-1 center">
+                </div>
+                <div class="col-5 pl-0 pr-0 " id="destDate">
+                    <input type="text" [ngClass]="{ 'invisible': myForm.value.triptype=='one'}" required class="form-control no-border-rad custom-date" name="dp" formControlName="dateto" ngbDatepicker #d2="ngbDatepicker">
+                    <span class="calendarClickIcon right-0" [ngClass]="{ 'invisible': myForm.value.triptype=='one'}" (click)="d2.toggle()" id="depDateCalIcon"></span>
+
+                </div>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-11 ">
+                <div class="pd-top-10">
+                    <label class="requiredLabel">GUEST :</label>
+                </div>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-11 ">
+                <div>
+                    <label for="adult" class="requiredLabel margin-bottom-0 pd-top-5">ADULT</label>
+                </div>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-8 pr-0">
+                <input id="adult" #adt type="text" class="form-control no-border-rad" formControlName="adult" />
+            </div>
+            <div class="col-4">
+                <span id="plus-adult" class="plus-adult plus" (click)="add(adt)"></span>
+                <span id="minus-adult" class="minus-adult minus" (click)="remove(adt)" [ngStyle]="{'opacity':myForm.value.adult>0?1:0,'cursor':myForm.value.adult>0?pointer:none}" ></span>
+
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-11 ">
+                <div class="pd-top-5">
+                    <label for="child" class="requiredLabel margin-bottom-0 pd-top-5">CHILD<span class="paxTypeInfo">2-11 yrs</span></label>
+                </div>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-8 pr-0">
+                <input id="child" #chd type="text" class="form-control no-border-rad" formControlName="child" />
+
+            </div>
+            <div class="col-4 ">
+                <span id="plus-child" class="plus-child plus" (click)="add(chd)"></span>
+                <span id="minus-child" class="minus-child minus" (click)="remove(chd)" [ngStyle]="{'opacity':myForm.value.child>0?1:0,'cursor':myForm.value.child>0?pointer:none}"></span>
+
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-11 ">
+                <div class="pd-top-5">
+
+                    <label for="infant" class="requiredLabel margin-bottom-0 pd-top-5">INFANT<span class="paxTypeInfo"><2yrs</span></label>
+                </div>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-8 pr-0">
+                <input id="infant" type="text" #inf class="form-control no-border-rad" formControlName="infant" />
+
+            </div>
+            <div class="col-4 ">
+                <span id="plus-inf" class="plus-inf plus" (click)="add(inf)"></span>
+                <span id="minus-inf" class="minus-inf minus" (click)="remove(inf)" [ngStyle]="{'opacity':myForm.value.infant>0?1:0,'cursor':myForm.value.infant>0?pointer:none}"></span>
+
+            </div>
+        </div>
+        <div class="row pad-5  ">
+            <div class="pull-right offset-md-4 col-8 right pr-0 ">
+                <div class="pd-top-10">
+
+                    <input src="" class="paynowBtn submit" id="flights-submit" name="ap3-flights-submit" type="submit" value="FIND FLIGHTS">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+</form>
+<ng-template #rt let-r="result" let-t="term">
+    {{ r.value}}
+</ng-template>

@@ -1,0 +1,255 @@
+{
+    "Fare_InformativeBestPricingWithoutPNRReply": {
+
+        "mainGroup": [{
+            "pricingGroupLevelGroup1": {
+                "numberOfPax": {
+                    "segmentControlDetails": {
+                        "quantity": "1",
+                        "numberOfUnits": "1"
+                    }
+                },
+
+                "fareInfoGroup": {
+
+
+                    "fareAmount": {
+                        "monetaryDetails": {
+                            "typeQualifier": "B",
+                            "amount": "558.00",
+                            "currency": "CHF"
+                        }
+
+                    },
+
+                    "surchargesGroup": {
+                        "taxesAmount": {
+                            "taxDetails": [{
+                                "rate": "200.00",
+                                "countryCode": "YQ",
+                                "type": "AD"
+                            }]
+                        }
+                    },
+                    "segmentLevelGroup": {
+                        "segmentInformation": {
+                            "flightDate": {
+                                "departureDate": "230818"
+                            },
+                            "boardPointDetails": {
+                                "trueLocationId": "ZRH"
+                            },
+                            "offpointDetails": {
+                                "trueLocationId": "DEL"
+                            },
+                            "companyDetails": {
+                                "marketingCompany": "LX"
+                            },
+                            "flightIdentification": {
+                                "flightNumber": "146",
+                                "bookingClass": "Q",
+                                "operationalSuffix": "X"
+                            },
+                            "itemNumber": "1"
+                        },
+
+                        "fareBasis": {
+                            "additionalFareDetails": {
+                                "rateClass": "QRCOWSR",
+                                "secondRateClass": "Q"
+                            }
+                        },
+                        "cabinGroup": {
+                            "cabinSegment": {
+                                "bookingClassDetails": {
+                                    "designator": "Q",
+                                    "option": "M"
+                                }
+                            }
+                        },
+                        "baggageAllowance": {
+                            "baggageDetails": {
+                                "freeAllowance": "1",
+                                "quantityCode": "N"
+                            }
+                        },
+                        "ptcSegment": {
+                            "quantityDetails": {
+                                "numberOfUnit": "1",
+                                "unitQualifier": "ADT"
+                            }
+                        }
+                    },
+                    "fareComponentDetailsGroup": {
+                        "fareComponentID": {
+                            "itemNumberDetails": {
+                                "number": "1"
+                            }
+                        },
+                        "marketFareComponent": {
+                            "boardPointDetails": {
+                                "trueLocationId": "ZRH"
+                            },
+                            "offpointDetails": {
+                                "trueLocationId": "DEL"
+                            }
+                        },
+                        "monetaryInformation": {
+                            "monetaryDetails": {
+                                "typeQualifier": "TFC",
+                                "amount": "565.86",
+                                "currency": "NUC"
+                            }
+                        },
+                        "componentClassInfo": {
+                            "fareBasisDetails": {
+                                "rateTariffClass": "QRCOWSR"
+                            }
+                        },
+                        "fareQualifiersDetail": {
+                            "discountDetails": {
+                                "fareQualifier": "756"
+                            }
+                        },
+                        "couponDetailsGroup": {
+                            "productId": {
+                                "referenceDetails": {
+                                    "type": "ST",
+                                    "value": "1"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "pricingGroupLevelGroup2": {
+                "numberOfPax": {
+                    "segmentControlDetails": {
+                        "quantity": "1",
+                        "numberOfUnits": "1"
+                    }
+                },
+
+                "fareInfoGroup": {
+
+
+                    "fareAmount": {
+                        "monetaryDetails": {
+                            "typeQualifier": "B",
+                            "amount": "558.00",
+                            "currency": "CHF"
+                        }
+
+                    },
+
+                    "surchargesGroup": {
+                        "taxesAmount": {
+                            "taxDetails": [{
+                                "rate": "200.00",
+                                "countryCode": "YQ",
+                                "type": "AD"
+                            }]
+                        }
+                    },
+                    "segmentLevelGroup": {
+                        "segmentInformation": {
+                            "flightDate": {
+                                "departureDate": "230818"
+                            },
+                            "boardPointDetails": {
+                                "trueLocationId": "ZRH"
+                            },
+                            "offpointDetails": {
+                                "trueLocationId": "DEL"
+                            },
+                            "companyDetails": {
+                                "marketingCompany": "LX"
+                            },
+                            "flightIdentification": {
+                                "flightNumber": "146",
+                                "bookingClass": "Q",
+                                "operationalSuffix": "X"
+                            },
+                            "itemNumber": "1"
+                        },
+
+                        "fareBasis": {
+                            "additionalFareDetails": {
+                                "rateClass": "QRCOWSR",
+                                "secondRateClass": "Q"
+                            }
+                        },
+                        "cabinGroup": {
+                            "cabinSegment": {
+                                "bookingClassDetails": {
+                                    "designator": "Q",
+                                    "option": "M"
+                                }
+                            }
+                        },
+                        "baggageAllowance": {
+                            "baggageDetails": {
+                                "freeAllowance": "1",
+                                "quantityCode": "N"
+                            }
+                        },
+                        "ptcSegment": {
+                            "quantityDetails": {
+                                "numberOfUnit": "1",
+                                "unitQualifier": "ADT"
+                            }
+                        }
+                    },
+                    "fareComponentDetailsGroup": {
+                        "fareComponentID": {
+                            "itemNumberDetails": {
+                                "number": "1"
+                            }
+                        },
+                        "marketFareComponent": {
+                            "boardPointDetails": {
+                                "trueLocationId": "ZRH"
+                            },
+                            "offpointDetails": {
+                                "trueLocationId": "DEL"
+                            }
+                        },
+                        "monetaryInformation": {
+                            "monetaryDetails": {
+                                "typeQualifier": "TFC",
+                                "amount": "565.86",
+                                "currency": "NUC"
+                            }
+                        },
+                        "componentClassInfo": {
+                            "fareBasisDetails": {
+                                "rateTariffClass": "QRCOWSR"
+                            }
+                        },
+                        "fareQualifiersDetail": {
+                            "discountDetails": {
+                                "fareQualifier": "756"
+                            }
+                        },
+                        "couponDetailsGroup": {
+                            "productId": {
+                                "referenceDetails": {
+                                    "type": "ST",
+                                    "value": "1"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }]
+
+
+
+
+
+
+
+    }
+}

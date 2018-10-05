@@ -1,0 +1,177 @@
+<div class="tabs-content clear flight-schedule container-fluid" data-trip-index="0" data-bundle-product="" data-bundle-amount="0">
+    <div class="container" *ngIf="!(_isLoading$ | async)">
+        <div class="row m0-xs-down">
+            <div class="p0-xs-down flight-section-search-head col-8"></div>
+        </div>
+        <form [formGroup]="myrecordForm" (ngSubmit)="onSubmit()">
+            <div class="row row-table margin-top-5" *ngIf="(myrecordForm.value.data| json)!= '{}'">
+                <div class="col-6">
+                    <div class="row row-table margin-top-5">
+                        <div class="col-12 m-0 outbound-header  flight-pax-table-header">
+                            <h2>Flight Information</h2>
+                        </div>
+                        <div class="col-12 m-0 outbound-header flight-pax-table-header ">
+                            <h5>
+                                <span class="booking-ref">Booking Reference:</span> {{myrecordForm.value.data.pnr}}
+                                <span class="status-ref">STATUS:  <span class="active" [ngClass]="{'inactive':myrecordForm.value.data.status=='C'}">{{myrecordForm.value.data.statusDescr}}</span></span>
+                            </h5>
+                        </div>
+                        <div class="flight-pax-table p-0 col-12">
+
+
+                            <div class="col-12 detail-container-head">
+
+                                <div class="row row-table p-0 outbound-header flight-pax-table-header flight-record-header">
+                                    <h5 class="m-0">Outbound Flights</h5>
+                                </div>
+                                <div class="row row-table outbound-record-details">
+                                    <div class="col-12">
+                                        <div class="row row-table view-detail-row">
+                                            <div class="col-3">DEPARTURE</div>
+
+                                            <div class="col-6 pax-record-val">
+                                                <span class="flight-detail pl-0  ">
+                                                        {{myrecordForm.value.data.originDescr}}({{myrecordForm.value.data.source}})
+                                                    </span>
+                                                <span class="flight-icon"></span>
+
+                                                <span class="flight-detail ">
+                                                            {{myrecordForm.value.data.destDescr}}({{myrecordForm.value.data.destination}})
+                                                        </span>
+                                            </div>
+                                            <div class="col-3 recordTripDuration "> Travel time:{{myrecordForm.value.data.duration}}
+
+
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="row row-table  flight-record-detail">
+                                            <div class="col-3  recordTripDt ">
+                                                {{myrecordForm.value.data.traveldate}}
+                                            </div>
+                                            <div class="col-6 ">
+                                                <div class="container">
+                                                    <div class="row row-table">
+                                                        <div class="col-4 recordTripTime  pl-0 ">
+                                                            {{myrecordForm.value.data.startTime}}
+                                                        </div>
+                                                        <div class="col-1"></div>
+
+                                                        <div class="col-4 recordTripTime ">
+                                                            {{myrecordForm.value.data.endTime}}
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-3 text-right">
+                                                {{myrecordForm.value.data.carrierName}}
+                                                <span class="{{myrecordForm.value.data.carrier}}-logo"></span>
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="row row-table p-0 outbound-header flight-pax-table-header pax-record-header">
+                                    <h5 class="m-0">Passengers</h5>
+                                </div>
+
+                                <div class="row row-table pax-record-details">
+                                    <div class="col-12 pax-rows">
+                                        <div *ngFor="let user of myrecordForm.value.data.users; index as i" class="row row-table pax-record-detail">
+                                            <div class="col-3 view-detail-row">fIRST NAME</div>
+
+                                            <div class="col-5 view-detail-row">LAST NAME</div>
+
+                                            <div class="col-4  view-detail-row last-col text-left">ETICKET</div>
+
+                                            <div class="col-3 pax-record-val">{{user.firstName}}</div>
+
+                                            <div class="col-5 pax-record-val">{{user.lastName}}</div>
+
+                                            <div class="col-4  text-left">{{user.ticketNumber}}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row row-table pr-0 cancelConfirm ">
+                                    <div class="col-2 offset-7  ">
+                                        <input src="" class="btn submit paynowBtn" id="pay-back" name="ap3-flights-submit" type="button" value="Go Back" (click)="redirectToRoute('/')">
+                                    </div>
+                                    <div class="col-3  pr-0 ">
+                                        <input src="" class="btn submit paynowBtn" id="pay-submit" name="ap3-flights-submit" type="submit" value="Cancel Booking" [disabled]=" myrecordForm.value.data.status=='C'">
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 offset-2 ">
+                    <div class="row row-table margin-top-5">
+
+                        <div class="row row-table margin-top-5">
+                            <div class="col-12 m-0 outbound-header  flight-pax-table-header">
+                                <h2>Payment Information</h2>
+                            </div>
+                            <div class="flight-pax-table view-table p-0 col-12">
+                                <div class="col-12 m-0 outbound-header flight-pax-table-header">
+                                    <h5>
+                                        Your Summary
+                                    </h5>
+                                </div>
+                                <div class="col-12 detail-container-head">
+                                    <div class="row row-table flight-record-detail">
+
+
+                                        <div class="col-5 payHeader view-detail-row">
+                                            Tax
+                                        </div>
+                                        <div class="col-6 payValue view-detail-row">
+                                            ${{myrecordForm.value.data.taxAirport*1 +myrecordForm.value.data.taxFuel*1 +myrecordForm.value.data.chargeService*1 +myrecordForm.value.data.feesDevelopment*1}}
+                                        </div>
+                                    </div>
+                                    <div class="row row-table flight-record-detail">
+
+
+                                        <div class="col-5 payHeader view-detail-row">
+                                            Total Price
+                                        </div>
+                                        <div class="col-6 payValueTotal view-detail-row">
+                                            ${{myrecordForm.value.data.price*1 }}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row row-table margin-top-5" *ngIf="(myrecordForm.value.data | json)== '{}'">
+                <div class="col-12">
+                    <div class="container no-results-div">
+                        <div class="row row-table ">
+                            <div class="col-12 no-results-found">
+                                No results found!
+                            </div>
+                            <div class="col-12">
+                                <span class="back-arrow" (click)="redirectToRoute('/')">  <span> Go Back</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

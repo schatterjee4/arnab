@@ -1,0 +1,1805 @@
+{
+    "flightInfo": [{
+            "basicFlightInfo": {
+                "flightDetails": {
+                    "departureDate": "230818",
+                    "departureTime": "1240",
+                    "arrivalDate": "230818",
+                    "arrivalTime": "2355"
+                },
+                "departureLocation": {
+                    "cityAirport": "ZRH"
+                },
+                "arrivalLocation": {
+                    "cityAirport": "DEL"
+                },
+                "marketingCompany": {
+                    "identifier": "LX"
+                },
+                "operatingCompany": {
+                    "identifier": "2L"
+                },
+                "flightIdentification": {
+                    "number": "146"
+                },
+                "productTypeDetail": {
+                    "productIndicators": [
+                        "D",
+                        "ET"
+                    ]
+                },
+                "lineItemNumber": "1"
+            },
+            "cabinClassInfo": [{
+                    "cabinInfo": {
+                        "cabinDesignation": {
+                            "cabinClassOfService": "1"
+                        }
+                    },
+                    "infoByCabinOnClasses": [{
+                            "productClassDetail": {
+                                "serviceClass": "F",
+                                "availabilityStatus": "8"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "A",
+                                "availabilityStatus": "8"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cabinInfo": {
+                        "cabinDesignation": {
+                            "cabinClassOfService": "2"
+                        }
+                    },
+                    "infoByCabinOnClasses": [{
+                            "productClassDetail": {
+                                "serviceClass": "J",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "C",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "D",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "Z",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "P",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "I",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "R",
+                                "availabilityStatus": "9"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cabinInfo": {
+                        "cabinDesignation": {
+                            "cabinClassOfService": "3"
+                        }
+                    },
+                    "infoByCabinOnClasses": [{
+                            "productClassDetail": {
+                                "serviceClass": "Y",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "B",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "M",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "U",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "H",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "Q",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "V",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "W",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "S",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "T",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "X",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "N",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "L",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "K",
+                                "availabilityStatus": "9"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "additionalFlightInfo": {
+                "flightDetails": {
+                    "typeOfAircraft": "333",
+                    "numberOfStops": "0",
+                    "legDuration": "0675"
+                },
+                "arrivalStation": {
+                    "terminal": "3"
+                },
+                "productFacilities": [{
+                        "type": "1A"
+                    },
+                    {
+                        "type": "LSA"
+                    },
+                    {
+                        "type": "M"
+                    }
+                ]
+            }
+        },
+        {
+            "basicFlightInfo": {
+                "flightDetails": {
+                    "departureDate": "230818",
+                    "departureTime": "1210",
+                    "arrivalDate": "230818",
+                    "arrivalTime": "1510"
+                },
+                "departureLocation": {
+                    "cityAirport": "ZRH"
+                },
+                "arrivalLocation": {
+                    "cityAirport": "DEL"
+                },
+                "marketingCompany": {
+                    "identifier": "EY"
+                },
+                "operatingCompany": {
+                    "identifier": "2L"
+                },
+                "flightIdentification": {
+                    "number": "1104"
+                },
+                "productTypeDetail": {
+                    "productIndicators": [
+                        "S",
+                        "702",
+                        "ET"
+                    ]
+                },
+                "lineItemNumber": "2"
+            },
+            "cabinClassInfo": [{
+                    "cabinInfo": {
+                        "cabinDesignation": {
+                            "cabinClassOfService": "2"
+                        }
+                    },
+                    "infoByCabinOnClasses": [{
+                            "productClassDetail": {
+                                "serviceClass": "J",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "C",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "D",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "Z",
+                                "availabilityStatus": "8"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "P",
+                                "availabilityStatus": "6"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "I",
+                                "availabilityStatus": "9"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cabinInfo": {
+                        "cabinDesignation": {
+                            "cabinClassOfService": "3"
+                        }
+                    },
+                    "infoByCabinOnClasses": [{
+                            "productClassDetail": {
+                                "serviceClass": "Y",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "B",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "M",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "U",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "H",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "Q",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "V",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "W",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "S",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "T",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "X",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "L",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "K",
+                                "availabilityStatus": "9"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "additionalFlightInfo": {
+                "flightDetails": {
+                    "typeOfAircraft": "E90",
+                    "numberOfStops": "0",
+                    "legDuration": "0240"
+                },
+                "arrivalStation": {
+                    "terminal": "2"
+                },
+                "productFacilities": [{
+                        "type": "1A"
+                    },
+                    {
+                        "type": "LSA"
+                    },
+                    {
+                        "type": "M"
+                    }
+                ]
+            }
+        },
+        {
+            "basicFlightInfo": {
+                "flightDetails": {
+                    "departureDate": "230818",
+                    "departureTime": "1430",
+                    "arrivalDate": "240818",
+                    "arrivalTime": "0015"
+                },
+                "departureLocation": {
+                    "cityAirport": "ZRH"
+                },
+                "arrivalLocation": {
+                    "cityAirport": "DEL"
+                },
+                "marketingCompany": {
+                    "identifier": "LH"
+                },
+                "operatingCompany": {
+                    "identifier": "LX"
+                },
+                "flightIdentification": {
+                    "number": "4287"
+                },
+                "productTypeDetail": {
+                    "productIndicators": [
+                        "E",
+                        "ET"
+                    ]
+                }
+            },
+            "cabinClassInfo": [{
+                    "cabinInfo": {
+                        "cabinDesignation": {
+                            "cabinClassOfService": "1"
+                        }
+                    },
+                    "infoByCabinOnClasses": [{
+                            "productClassDetail": {
+                                "serviceClass": "F",
+                                "availabilityStatus": "8"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "A",
+                                "availabilityStatus": "5"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cabinInfo": {
+                        "cabinDesignation": {
+                            "cabinClassOfService": "2"
+                        }
+                    },
+                    "infoByCabinOnClasses": [{
+                            "productClassDetail": {
+                                "serviceClass": "J",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "C",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "D",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "Z",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "P",
+                                "availabilityStatus": "7"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "I",
+                                "availabilityStatus": "5"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cabinInfo": {
+                        "cabinDesignation": {
+                            "cabinClassOfService": "3"
+                        }
+                    },
+                    "infoByCabinOnClasses": [{
+                            "productClassDetail": {
+                                "serviceClass": "Y",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "B",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "M",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "U",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "H",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "X",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "Q",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "V",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "W",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "S",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "T",
+                                "availabilityStatus": "5"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cabinInfo": {
+                        "cabinDesignation": {
+                            "cabinClassOfService": "4"
+                        }
+                    },
+                    "infoByCabinOnClasses": [{
+                            "productClassDetail": {
+                                "serviceClass": "G",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "E",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "N",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "R",
+                                "availabilityStatus": "8"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "additionalFlightInfo": {
+                "flightDetails": {
+                    "typeOfAircraft": "346",
+                    "numberOfStops": "0",
+                    "legDuration": "0585"
+                },
+                "departureStation": {
+                    "terminal": "2"
+                },
+                "arrivalStation": {
+                    "terminal": "3"
+                },
+                "productFacilities": [{
+                        "type": "1A"
+                    },
+                    {
+                        "type": "LSA"
+                    },
+                    {
+                        "type": "M"
+                    }
+                ]
+            }
+        },
+        {
+            "basicFlightInfo": {
+                "flightDetails": {
+                    "departureDate": "230818",
+                    "departureTime": "1225",
+                    "arrivalDate": "230818",
+                    "arrivalTime": "2045"
+                },
+                "departureLocation": {
+                    "cityAirport": "ZRH"
+                },
+                "arrivalLocation": {
+                    "cityAirport": "DXB"
+                },
+                "marketingCompany": {
+                    "identifier": "LX"
+                },
+                "operatingCompany": {
+                    "identifier": "2L"
+                },
+                "flightIdentification": {
+                    "number": "242"
+                },
+                "productTypeDetail": {
+                    "productIndicators": [
+                        "S",
+                        "ET"
+                    ]
+                },
+                "lineItemNumber": "3"
+            },
+            "cabinClassInfo": [{
+                    "cabinInfo": {
+                        "cabinDesignation": {
+                            "cabinClassOfService": "1"
+                        }
+                    },
+                    "infoByCabinOnClasses": [{
+                            "productClassDetail": {
+                                "serviceClass": "F",
+                                "availabilityStatus": "8"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "A",
+                                "availabilityStatus": "8"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cabinInfo": {
+                        "cabinDesignation": {
+                            "cabinClassOfService": "2"
+                        }
+                    },
+                    "infoByCabinOnClasses": [{
+                            "productClassDetail": {
+                                "serviceClass": "J",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "C",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "D",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "Z",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "P",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "I",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "R",
+                                "availabilityStatus": "9"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cabinInfo": {
+                        "cabinDesignation": {
+                            "cabinClassOfService": "3"
+                        }
+                    },
+                    "infoByCabinOnClasses": [{
+                            "productClassDetail": {
+                                "serviceClass": "Y",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "B",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "M",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "U",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "H",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "Q",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "V",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "W",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "S",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "T",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "X",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "N",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "L",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "K",
+                                "availabilityStatus": "9"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "additionalFlightInfo": {
+                "flightDetails": {
+                    "typeOfAircraft": "333",
+                    "numberOfStops": "0"
+                },
+                "arrivalStation": {
+                    "terminal": "1"
+                },
+                "productFacilities": [{
+                        "type": "1A"
+                    },
+                    {
+                        "type": "LSA"
+                    },
+                    {
+                        "type": "M"
+                    }
+                ]
+            }
+        },
+        {
+            "basicFlightInfo": {
+                "flightDetails": {
+                    "departureDate": "230818",
+                    "departureTime": "2200",
+                    "arrivalDate": "240818",
+                    "arrivalTime": "0245"
+                },
+                "departureLocation": {
+                    "cityAirport": "DXB"
+                },
+                "arrivalLocation": {
+                    "cityAirport": "DEL"
+                },
+                "marketingCompany": {
+                    "identifier": "EK"
+                },
+                "flightIdentification": {
+                    "number": "512"
+                },
+                "productTypeDetail": {
+                    "productIndicators": [
+                        "E",
+                        "ET"
+                    ]
+                }
+            },
+            "cabinClassInfo": [{
+                    "cabinInfo": {
+                        "cabinDesignation": {
+                            "cabinClassOfService": "1"
+                        }
+                    },
+                    "infoByCabinOnClasses": [{
+                            "productClassDetail": {
+                                "serviceClass": "F",
+                                "availabilityStatus": "4"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "A",
+                                "availabilityStatus": "4"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cabinInfo": {
+                        "cabinDesignation": {
+                            "cabinClassOfService": "2"
+                        }
+                    },
+                    "infoByCabinOnClasses": [{
+                            "productClassDetail": {
+                                "serviceClass": "J",
+                                "availabilityStatus": "7"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "C",
+                                "availabilityStatus": "7"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "I",
+                                "availabilityStatus": "7"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "O",
+                                "availabilityStatus": "7"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cabinInfo": {
+                        "cabinDesignation": {
+                            "cabinClassOfService": "3"
+                        }
+                    },
+                    "infoByCabinOnClasses": [{
+                            "productClassDetail": {
+                                "serviceClass": "Y",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "E",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "R",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "W",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "M",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "B",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "U",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "K",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "Q",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "L",
+                                "availabilityStatus": "9"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "additionalFlightInfo": {
+                "flightDetails": {
+                    "typeOfAircraft": "77W",
+                    "numberOfStops": "0",
+                    "legDuration": "1050"
+                },
+                "departureStation": {
+                    "terminal": "3"
+                },
+                "arrivalStation": {
+                    "terminal": "3"
+                },
+                "productFacilities": [{
+                        "type": "1A"
+                    },
+                    {
+                        "type": "DA"
+                    },
+                    {
+                        "type": "LSA"
+                    },
+                    {
+                        "type": "M"
+                    }
+                ]
+            }
+        },
+        {
+            "basicFlightInfo": {
+                "flightDetails": {
+                    "departureDate": "230818",
+                    "departureTime": "1225",
+                    "arrivalDate": "230818",
+                    "arrivalTime": "2045"
+                },
+                "departureLocation": {
+                    "cityAirport": "ZRH"
+                },
+                "arrivalLocation": {
+                    "cityAirport": "DXB"
+                },
+                "marketingCompany": {
+                    "identifier": "LX"
+                },
+                "flightIdentification": {
+                    "number": "242"
+                },
+                "productTypeDetail": {
+                    "productIndicators": [
+                        "S",
+                        "ET"
+                    ]
+                },
+                "lineItemNumber": "4"
+            },
+            "cabinClassInfo": [{
+                    "cabinInfo": {
+                        "cabinDesignation": {
+                            "cabinClassOfService": "1"
+                        }
+                    },
+                    "infoByCabinOnClasses": [{
+                            "productClassDetail": {
+                                "serviceClass": "F",
+                                "availabilityStatus": "8"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "A",
+                                "availabilityStatus": "8"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cabinInfo": {
+                        "cabinDesignation": {
+                            "cabinClassOfService": "2"
+                        }
+                    },
+                    "infoByCabinOnClasses": [{
+                            "productClassDetail": {
+                                "serviceClass": "J",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "C",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "D",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "Z",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "P",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "R",
+                                "availabilityStatus": "9"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cabinInfo": {
+                        "cabinDesignation": {
+                            "cabinClassOfService": "3"
+                        }
+                    },
+                    "infoByCabinOnClasses": [{
+                            "productClassDetail": {
+                                "serviceClass": "Y",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "B",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "M",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "U",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "H",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "Q",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "V",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "W",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "S",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "T",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "X",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "N",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "L",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "K",
+                                "availabilityStatus": "9"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "additionalFlightInfo": {
+                "flightDetails": {
+                    "typeOfAircraft": "333",
+                    "numberOfStops": "0"
+                },
+                "arrivalStation": {
+                    "terminal": "1"
+                },
+                "productFacilities": [{
+                        "type": "1A"
+                    },
+                    {
+                        "type": "LSA"
+                    },
+                    {
+                        "type": "M"
+                    }
+                ]
+            }
+        },
+        {
+            "basicFlightInfo": {
+                "flightDetails": {
+                    "departureDate": "230818",
+                    "departureTime": "2205",
+                    "arrivalDate": "240818",
+                    "arrivalTime": "0305"
+                },
+                "departureLocation": {
+                    "cityAirport": "DXB"
+                },
+                "arrivalLocation": {
+                    "cityAirport": "DEL"
+                },
+                "marketingCompany": {
+                    "identifier": "9W"
+                },
+                "flightIdentification": {
+                    "number": "547"
+                },
+                "productTypeDetail": {
+                    "productIndicators": [
+                        "E",
+                        "ET"
+                    ]
+                }
+            },
+            "cabinClassInfo": [{
+                    "cabinInfo": {
+                        "cabinDesignation": {
+                            "cabinClassOfService": "2"
+                        }
+                    },
+                    "infoByCabinOnClasses": [{
+                            "productClassDetail": {
+                                "serviceClass": "C",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "J",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "Z",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "I",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "P",
+                                "availabilityStatus": "7"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cabinInfo": {
+                        "cabinDesignation": {
+                            "cabinClassOfService": "3"
+                        }
+                    },
+                    "infoByCabinOnClasses": [{
+                            "productClassDetail": {
+                                "serviceClass": "Y",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "M",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "T",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "U",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "N",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "L",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "Q",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "S",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "K",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "H",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "V",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "O",
+                                "availabilityStatus": "7"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "W",
+                                "availabilityStatus": "7"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "additionalFlightInfo": {
+                "flightDetails": {
+                    "typeOfAircraft": "73H",
+                    "numberOfStops": "0",
+                    "legDuration": "1110"
+                },
+                "departureStation": {
+                    "terminal": "1"
+                },
+                "arrivalStation": {
+                    "terminal": "3"
+                },
+                "productFacilities": [{
+                        "type": "1A"
+                    },
+                    {
+                        "type": "DA"
+                    },
+                    {
+                        "type": "LSA"
+                    },
+                    {
+                        "type": "M"
+                    }
+                ]
+            }
+        },
+        {
+            "basicFlightInfo": {
+                "flightDetails": {
+                    "departureDate": "230818",
+                    "departureTime": "1525",
+                    "arrivalDate": "230818",
+                    "arrivalTime": "1620"
+                },
+                "departureLocation": {
+                    "cityAirport": "ZRH"
+                },
+                "arrivalLocation": {
+                    "cityAirport": "MUC"
+                },
+                "marketingCompany": {
+                    "identifier": "LX"
+                },
+                "operatingCompany": {
+                    "identifier": "2L"
+                },
+                "flightIdentification": {
+                    "number": "1108"
+                },
+                "productTypeDetail": {
+                    "productIndicators": [
+                        "S",
+                        "702",
+                        "ET"
+                    ]
+                },
+                "lineItemNumber": "5"
+            },
+            "cabinClassInfo": [{
+                    "cabinInfo": {
+                        "cabinDesignation": {
+                            "cabinClassOfService": "2"
+                        }
+                    },
+                    "infoByCabinOnClasses": [{
+                            "productClassDetail": {
+                                "serviceClass": "J",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "C",
+                                "availabilityStatus": "7"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "D",
+                                "availabilityStatus": "6"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "Z",
+                                "availabilityStatus": "5"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "P",
+                                "availabilityStatus": "4"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "I",
+                                "availabilityStatus": "8"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cabinInfo": {
+                        "cabinDesignation": {
+                            "cabinClassOfService": "3"
+                        }
+                    },
+                    "infoByCabinOnClasses": [{
+                            "productClassDetail": {
+                                "serviceClass": "Y",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "B",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "M",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "U",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "H",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "Q",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "V",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "W",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "S",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "T",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "X",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "L",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "K",
+                                "availabilityStatus": "9"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "additionalFlightInfo": {
+                "flightDetails": {
+                    "typeOfAircraft": "E90",
+                    "numberOfStops": "0"
+                },
+                "arrivalStation": {
+                    "terminal": "2"
+                },
+                "productFacilities": [{
+                        "type": "1A"
+                    },
+                    {
+                        "type": "LSA"
+                    },
+                    {
+                        "type": "M"
+                    }
+                ]
+            }
+        },
+        {
+            "basicFlightInfo": {
+                "flightDetails": {
+                    "departureDate": "230818",
+                    "departureTime": "1945",
+                    "arrivalDate": "240818",
+                    "arrivalTime": "0630"
+                },
+                "departureLocation": {
+                    "cityAirport": "MUC"
+                },
+                "arrivalLocation": {
+                    "cityAirport": "DEL"
+                },
+                "marketingCompany": {
+                    "identifier": "LH"
+                },
+                "flightIdentification": {
+                    "number": "4579"
+                },
+                "productTypeDetail": {
+                    "productIndicators": [
+                        "E",
+                        "ET"
+                    ]
+                }
+            },
+            "cabinClassInfo": [{
+                    "cabinInfo": {
+                        "cabinDesignation": {
+                            "cabinClassOfService": "1"
+                        }
+                    },
+                    "infoByCabinOnClasses": [{
+                            "productClassDetail": {
+                                "serviceClass": "F",
+                                "availabilityStatus": "8"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "A",
+                                "availabilityStatus": "5"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cabinInfo": {
+                        "cabinDesignation": {
+                            "cabinClassOfService": "2"
+                        }
+                    },
+                    "infoByCabinOnClasses": [{
+                            "productClassDetail": {
+                                "serviceClass": "J",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "C",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "D",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "Z",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "P",
+                                "availabilityStatus": "7"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "I",
+                                "availabilityStatus": "5"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cabinInfo": {
+                        "cabinDesignation": {
+                            "cabinClassOfService": "3"
+                        }
+                    },
+                    "infoByCabinOnClasses": [{
+                            "productClassDetail": {
+                                "serviceClass": "Y",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "B",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "M",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "U",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "H",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "X",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "Q",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "V",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "W",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "S",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "T",
+                                "availabilityStatus": "5"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cabinInfo": {
+                        "cabinDesignation": {
+                            "cabinClassOfService": "4"
+                        }
+                    },
+                    "infoByCabinOnClasses": [{
+                            "productClassDetail": {
+                                "serviceClass": "G",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "E",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "N",
+                                "availabilityStatus": "9"
+                            }
+                        },
+                        {
+                            "productClassDetail": {
+                                "serviceClass": "R",
+                                "availabilityStatus": "8"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "additionalFlightInfo": {
+                "flightDetails": {
+                    "typeOfAircraft": "346",
+                    "numberOfStops": "0",
+                    "legDuration": "1135"
+                },
+                "departureStation": {
+                    "terminal": "2"
+                },
+                "arrivalStation": {
+                    "terminal": "3"
+                },
+                "productFacilities": [{
+                        "type": "1A"
+                    },
+                    {
+                        "type": "LSA"
+                    },
+                    {
+                        "type": "M"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+<div class="modal-header">
+    <h4 class="modal-title"></h4>
+    <ng-container *ngIf="modaltype==null||modaltype=='precancel'||modaltype=='precanceldate'">
+
+        <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+                <span aria-hidden="true">&times;</span>
+        </button>
+    </ng-container>
+</div>
+
+<div class="modal-body modal-{{size}}">
+    <ng-container *ngIf="modaltype==null">
+        <div class="col-12 p-0 m-0 flight-pop-table-header">
+            <h3><span class="book-sucess">Booking Created Successfully!</span></h3>
+        </div>
+    </ng-container>
+    <ng-container *ngIf="modaltype=='precancelcheck'">
+        <div class="col-12 p-2 m-0 flight-pop-table-header ">
+            <i class="fa fa-spinner fa-spin"></i> <span class="mainTxt">We are checking your Booking...</span>
+        </div>
+    </ng-container>
+    <ng-container *ngIf="modaltype=='precancel'">
+        <div class="col-12 p-2 m-0 flight-pop-table-header ">
+            <span class="mainTxt">We are Sorry!</span>
+            <p *ngIf="modaltype=='precancel'">Your ticket is not eligible for an online refund .  Please look at our <a href="https://www.google.com">terms and conditions</a> for online refund. I request you to please contact our service desk @1234</p>
+        </div>
+    </ng-container>
+    <ng-container *ngIf="modaltype=='precanceldate'">
+        <div class="col-12 p-2 m-0 flight-pop-table-header ">
+         <p >Your booking is no more valid due to a natural calamity in your destination. You are entitled for a full refund. </p>
+        </div>
+    </ng-container>
+    <ng-container *ngIf="modaltype=='loader'">
+        <img src="../../../assets/loading-flight.gif" class="loader" width="80%" height="auto" />
+    </ng-container>
+
+</div>
+
+<div class="modal-footer"></div>
